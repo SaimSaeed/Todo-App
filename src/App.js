@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import "bootstrap/dist/js/bootstrap.bundle"
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom"
+import NotesScreen from './Screen/NotesScreen';
+import RegisterScreen from "./Screen/RegisterScreen"
+import LoginScreen from "./Screen/LoginScreen"
+import { auth } from './config/firebase_config';
+import React ,{useEffect, useState}  from "react"
 
 function App() {
+  const [userName,setUserName] = useState("")
+  useEffect(() => {
+   
+    auth.onAuthStateChanged((user)=>{
+      if(user){
+        setUserName(user.displayName)
+      }else {
+        setUserName("")
+      }
+      console.log(user)
+    })
+   
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+<BrowserRouter>
+
+
+<Routes>
+
+  <Route path='/'  element={<NotesScreen name={userName}/>}/>
+  <Route path='/register'  element={<RegisterScreen/>}/>
+  <Route path='/login'  element={<LoginScreen/>}/>
+
+
+
+</Routes>
+
+
+
+
+</BrowserRouter>
+
+
+
+
+
+
+</>
   );
 }
 
