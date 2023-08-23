@@ -177,30 +177,35 @@ body {
         .notes-right {
             width: 70%;
             height: 80vh;
+            overflow: auto;
            
 .notes-align{
     display: flex;
-   
+    flex-wrap: wrap;
+    
     
             .note {
                 width: 30vh;
                 height: 25vh;
-                background-color: pink;
-                border: 1px solid pink;
-                border-radius: 5px;
+               
+                
                 text-align: center;
-              
+            margin-top: 2%;
+             
                 
         
             }
             .new-note{
                 margin-left: 10px;
                 text-align: center;
+                background-color: whitesmoke;
+                box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+                border-radius: 5px;
                  
                 button {
                     
                     font-size: 5rem;
-                    background-color:pink ;
+                    background-color:whitesmoke ;
                     border: none;
                     &:hover{
                         cursor: pointer;
