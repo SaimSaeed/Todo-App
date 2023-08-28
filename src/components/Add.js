@@ -15,7 +15,7 @@ function Add() {
 
     const userCollectionRef = collection(db, "userNotes")
 
-  // Set New Movie States
+  // Set New Data States
   const [newTitle, setNewTitle] = useState("")
   const [newDetail, setNewDetail] = useState("")
   const [newDate, setNewDate] = useState(null)
@@ -64,7 +64,7 @@ function Add() {
                         </label>
                         <br/>
                         <label style={{width:"30%"}}><h3>Date</h3>
-                        <input type="datetime-local" name="title"  placeholder='Title'  onChange={(e) => setNewDate(e.target.value)}/>
+                        <input type="date" name="title"  placeholder='Title'  onChange={(e) => setNewDate(e.target.value)}/>
                         </label>
                         <br/>
                         <label style={{width:"30%"}}><h3>Color</h3>

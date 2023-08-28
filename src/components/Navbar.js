@@ -35,7 +35,7 @@ const navigate  = useNavigate()
          
 
             <li className='nav-item'>Upcoming</li>
-            <li className='nav-item'>Today</li>
+            <li className='nav-item'><a href='today' style={{textDecoration:"none",color:"black"}}>Today</a></li>
             <li className='nav-item'>Calendar</li>
             <li className='nav-item'>Sticky Wall</li>
           </ul>

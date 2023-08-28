@@ -90,7 +90,7 @@ function UserNotes(props) {
                         </label>
                         <br/>
                         <label style={{width:"30%"}}><h3>Date</h3>
-                        <input type="datetime-local" name="title"  placeholder='Title'  onChange={(e) => setUpdateDate(e.target.value)}/>
+                        <input type="date" name="title"  placeholder='Title'  onChange={(e) => setUpdateDate(e.target.value)}/>
                         </label>
                         <br/>
                         <label style={{width:"30%"}}><h3>Color</h3>

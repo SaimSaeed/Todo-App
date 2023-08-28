@@ -8,6 +8,7 @@ import {
 import NotesScreen from './Screen/NotesScreen';
 import RegisterScreen from "./Screen/RegisterScreen"
 import LoginScreen from "./Screen/LoginScreen"
+import TodayScreen from './Screen/TodayScreen';
 import { auth } from './config/firebase_config';
 import React ,{useEffect, useState}  from "react"
 
@@ -35,6 +36,7 @@ function App() {
   <Route path='/'  element={<NotesScreen name={userName}/>}/>
   <Route path='/register'  element={<RegisterScreen/>}/>
   <Route path='/login'  element={<LoginScreen/>}/>
+  <Route path='/today'  element={<TodayScreen/>}/>
 
 
 
