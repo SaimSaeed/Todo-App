@@ -1,0 +1,47 @@
+[debug] [2023-09-01T12:03:25.484Z] ----------------------------------------------------------------------
+[debug] [2023-09-01T12:03:25.490Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Waseem Computers\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-01T12:03:25.491Z] CLI Version:   12.5.2
+[debug] [2023-09-01T12:03:25.492Z] Platform:      win32
+[debug] [2023-09-01T12:03:25.493Z] Node Version:  v16.15.1
+[debug] [2023-09-01T12:03:25.495Z] Time:          Fri Sep 01 2023 17:03:25 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-09-01T12:03:25.496Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-01T12:03:25.709Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-01T12:03:25.711Z] > authorizing via signed-in user (saimsaeed640@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Waseem Computers\Desktop\NotesApp-Project\notesapp
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-01T12:03:38.511Z] Using project from CLI flag: notesapp-89b7f
+[debug] [2023-09-01T12:03:38.528Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/notesapp-89b7f [none]
+[debug] [2023-09-01T12:03:39.265Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/notesapp-89b7f 200
+[debug] [2023-09-01T12:03:39.265Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/notesapp-89b7f {"projectId":"notesapp-89b7f","projectNumber":"286338706232","displayName":"Notesapp","name":"projects/notesapp-89b7f","resources":{"hostingSite":"notesapp-89b7f"},"state":"ACTIVE","etag":"1_fb4cd0c3-6d82-4735-841c-e4909662c0ff"}
+[info] i  Using project notesapp-89b7f (Notesapp) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-09-01T12:03:47.981Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-09-01T12:03:48.302Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-09-01T12:03:48.303Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.1","browserURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.memory.js"}}

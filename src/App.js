@@ -1,7 +1,7 @@
 import './App.scss';
 import "bootstrap/dist/js/bootstrap.bundle"
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom"
@@ -28,7 +28,7 @@ function App() {
   }, []);
   return (
 <>
-<BrowserRouter>
+<HashRouter>
 
 
 <Routes>
@@ -45,7 +45,7 @@ function App() {
 
 
 
-</BrowserRouter>
+</HashRouter>
 
 
 
