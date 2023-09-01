@@ -1,7 +1,7 @@
 import React from 'react'
 import {auth} from "../config/firebase_config"
 import {signOut} from "firebase/auth"
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 function Navbar() {
@@ -35,9 +35,9 @@ const navigate  = useNavigate()
          
 
             <li className='nav-item'>Upcoming</li>
-            <li className='nav-item'><a href='today' style={{textDecoration:"none",color:"black"}}>Today</a></li>
+            <li className='nav-item'><Link to={"/today"} style={{textDecoration:"none",color:"black"}} >Today</Link></li>
             <li className='nav-item'>Calendar</li>
-            <li className='nav-item'>Sticky Wall</li>
+            <li className='nav-item'><Link to={"/"} style={{textDecoration:"none",color:"black"}} >Sticky Wall</Link></li>
           </ul>
         </div>
         <div className='task2box'>
